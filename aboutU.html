@@ -1,0 +1,113 @@
+<html><head>
+	<title> Shivani | About</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="welcome.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div id="branding">
+		 <h1><span id="highlight">Happy</span> birthday !!</h1>
+	    </div>
+		<nav>
+			<ul>
+				<li><a href="index.html">welcome</a></li>
+			    <li><a href="moments.html">moments</a></li>
+				<li class="current"><a href="aboutU.html">about u</a></li>
+			</ul>
+		</nav>
+	</div>	
+</header>
+<section id="showCase">
+	<div class="container">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 7</div>
+			  <img src="images/1.jpg" style="width:80%">
+			  <div class="text">PROUD</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2/ 7</div>
+			  <img src="images/4.jpg" style="width:80%">
+			  <div class="text">KIND</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 7</div>
+			  <img src="images/7.jpg" style="width:80%">
+			  <div class="text">MODESTY</div>
+			</div>
+			<div class="mySlides fade">
+			  <div class="numbertext">4 / 7</div>
+			  <img src="images/8.jpg" style="width:80%">
+			  <div class="text" >LOVE & <br> KINDNESS</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">5 / 7</div>
+			  <img src="images/9.jpg" style="width:80%">
+			  <div class="text">ENJOYING <br>EVERY<br> MOMENT<br>(INDEPENDENT)</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">6 / 7</div>
+			  <img src="images/13.jpg" style="width:80%">
+			  <div class="text">CONFIDENT</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">7 / 7</div>
+			  <img src="images/25.jpg" style="width:80%">
+			  <div class="text">CHASMISS</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+					<h1>Happy Birthday Dear</h1>
+					<br>
+					
+		</div>
+</section>
+<article>
+<div class="container">
+	
+	
+	<p>
+		You are proud of every decisions you take. You keep waking on path you feel is right and dont care what others think or will say.frankly i didn't see any other friend being soo kind for each and everyone.
+		There are many examples to prove that.You are modern indepent girl.<br>hehehhehe....The best thing i like in u is ur nature.</p>
+<br>
+	</div>
+</article>
+<script>
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+<footer>
+	<p>Many many more happy returns for the day</p>
+</footer>
+
+</body></html>

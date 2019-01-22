@@ -1,0 +1,122 @@
+<html><head>
+	<title> Shivani | Welcome</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="welcome.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div id="branding">
+		    <h1><span id="highlight">Happy</span> birthday !!</h1>
+	    </div>
+		<nav>
+			<ul>
+				<li class="current"><a href="index.html">welcome</a></li>
+			    <li><a href="Moments.html">moments</a></li>
+				<li><a href="aboutU.html">about u</a></li>
+			</ul>
+		</nav>
+	</div>	
+</header>
+<section id="showCase">
+	<div class="container">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <img src="images/banner5.jpg" style="width:100%">
+			  <div class="quotees">Komiiii</div>
+			  </div>
+
+			<div class="mySlides fade">
+		      <img src="images/banner2.jpg" style="width:100%">
+			  <div class="quotes">i always wished for a...<br><span class="red">special friend,</span><br>who'd be close 
+			  	close to my heart...It came true when i met <br><span class="red">You!</span><br>on your special day<br> I wish for You!<br>may all your wished & dreams come true!<br>Have a very <br><span class="red"><br>HAPPY BIRTHDAY!</span> </div>
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="images/banner4.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+</section>
+
+<section id="boxes">
+	<div class="container">
+		<div class="boxs">
+			<img src="images/welcomeicon.jpg" alt="welcome" class="image">
+			<a href="index.html" class="styling">
+				<h3 >Welcome</h3>
+			</a>
+			<p>On clicking Welcome will show you this same page.</p>
+		</div>
+		<div class="boxs">
+			<img src="images/16.jpg" alt="moments" class="image">
+			<a href="Moments.html" class="styling">
+				<h3 >Moments </h3>
+			</a>
+			<p>All moments we shared together .</p>
+		</div>
+		<div class="boxs">
+			<img src="images/1.jpg" alt="aboutu" class="image" style="padding-right: none";>
+			<a href="aboutU.html" class="styling">
+				<h3 >About u</h3>
+			</a>
+			<p>GOOD THING ABOUT YOU</p>
+		</div>
+	</div>
+</section>
+<section>
+	
+		<div class= "container1">
+			<video src="video.mp4" autoplay controls loop width="70%" height="500px"></video>
+	    </div>
+	
+</section>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<footer>
+	<p>Many many more happy returns for the day</p>
+</footer>
+
+</body></html>
